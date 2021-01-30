@@ -6,6 +6,7 @@ from discord.ext import commands
 prefix = '~'
 client = commands.Bot(command_prefix = prefix, case_insensitive= True)
 
+##RACES##
 EEPC = ['Genasi (Air)', 'Genasi (Earth)', 'Genasi (Fire)', 'Genasi (Water)']
 LR = ['Locathah']
 MTF = ['Dwarf (Duergar)', 'Elf (Eladrin)', 'Elf (Sea)', 'Elf (Shadar-kai)', 'Gith (Githyanki)', 'Gith (Githzerai)', 'Gnome (Deep)', 'Tiefling (Asmodeus)', 'Tiefling (Baalzebul)', 'Tiefling (Dispater)', 'Tiefling (Fierna)', 'Tiefling (Glasya)', 'Tiefling (Levistus)', 'Tiefling (Mammon)', 'Tiefling (Mephistopheles)', 'Tiefling (Zariel)']
@@ -18,9 +19,11 @@ SPC = ['Aasimar (Fallen)', 'Aasimar (Protector)', 'Aasimar (Scourge)', 'Dwarf (D
 HIS_ARace = [EEPC, LR, MTF, PHB, SCAG, VGM, XGE]
 CUS_Race = [PHB, SPC]
 
-###CLASSES
+###CLASSES##
+#####ARTIFICER#####
 Artificer = ['Alchemist Artificer', 'Armorer Artificer', 'Artillerist Artificer', 'Battle Smith Artificer']
 
+#####BARBARIAN#####
 Barbarian_PHB = ['Path of the Berserker Barbarian', 'Path of the Totem Warrior Barbarian']
 Barbarian_SCAGa = ['Path of the Battlerager Barbarian', 'Path of the Berserker Barbarian', 'Path of the Totem Warrior Barbarian']
 Barbarian_SCAGo = ['Path of the Battlerager Barbarian', 'Path of the Totem Warrior Barbarian']
@@ -38,6 +41,7 @@ BRB13 = random.choice(Barbarian_XGEa)
 HIS_Barbarian = BRB00, BRB01, BRB03
 CUR_Barbarian = BRB00, BRB02, BRB03
 
+#####BARD#####
 Bard_PHB = ['College of Lore Bard', 'College of Valor Bard']
 Bard_SCAG = ['College of Lore Bard', 'College of Valor Bard']
 Bard_TCEa = ['College of Creation Bard', 'College of Eloquence Bard', 'College of Lore Bard', 'College of Valor Bard']
@@ -52,6 +56,7 @@ BRD12 = random.choice(Bard_XGEa)
 HIS_Bard = BRD00, BRD02
 CUR_Bard = BRD00, BRD01, BRD02
 
+#####CLERIC#####
 Cleric_PHB = ['Knowledge Domain Cleric', 'Life Domain Cleric', 'Light Domain Cleric', 'Nature Domain Cleric', 'Tempest Domain Cleric', 'Trickery Domain Cleric', 'War Domain Cleric']
 Cleric_SCAGa = ['Arcana Domain Cleric', 'Knowledge Domain Cleric', 'Life Domain Cleric', 'Light Domain Cleric', 'Nature Domain Cleric', 'Tempest Domain Cleric', 'Trickery Domain Cleric', 'War Domain Cleric']
 Cleric_SCAGo = ['Arcana Domain Cleric']
@@ -69,6 +74,7 @@ CLE13 = random.choice(Cleric_XGEa)
 HIS_Cleric = CLE00, CLE01, CLE03
 CUR_Cleric = CLE00, CLE02, CLE03
 
+#####DRUID#####
 Druid_PHB = ['Circle of the Land Druid', 'Circle of the Moon Druid']
 Druid_SCAG = ['Circle of the Land Druid', 'Circle of the Moon Druid']
 Druid_TCEa = ['Circle of the Land Druid', 'Circle of the Moon Druid', 'Circle of the Spores Druid', 'Circle of the Stars Druid', 'Circle of the Wildfire Druid']
@@ -83,6 +89,7 @@ DRU12 = random.choice(Druid_XGEa)
 HIS_Druid = DRU00, DRU02
 CUR_Druid = DRU00, DRU01, DRU02
 
+#####FIGHTER#####
 Fighter_PHB = ['Battle Master Fighter', 'Champion Fighter', 'Eldritch Knight Fighter']
 Fighter_SCAGa = ['Battle Master Fighter', 'Champion Fighter', 'Eldritch Knight Fighter']
 Fighter_SCAGo = ['Purple Dragon Knight (Banneret) Fighter']
@@ -100,6 +107,7 @@ FIG13 = random.choice(Fighter_XGEa)
 HIS_Fighter = FIG00, FIG01, FIG03
 CUR_Fighter = FIG00, FIG02, FIG03
 
+#####MONK#####
 Monk_PHB = ['Way of the Four Elements Monk', 'Way of the pen Hand Monk', 'Way of Shadow Monk']
 Monk_SCAGa = ['Way of the Four Elements Monk', 'Way of the Open Hand Monk', 'Way of Shadow Monk', 'Way of the Long Death Monk', 'Way of the Sun Soul Monk']
 Monk_SCAGo = ['Way of the Long Death Monk', 'Way of the Sun Soul Monk']
@@ -117,6 +125,7 @@ MON13 = random.choice(Monk_XGEa)
 HIS_Monk = MON00, MON01, MON03
 CUR_Monk = MON00, MON02, MON03
 
+#####PALADIN#####
 Paladin_PHB = ['Oath of the Ancients Paladin', 'Oath of Devotion Paladin', 'Oath of Vengeance Paladin']
 Paladin_SCAGa = ['Oath of the Ancients Paladin', 'Oath of the Crown Paladin', 'Oath of Devotion Paladin', 'Oath of Vengeance Paladin']
 Paladin_SCAGo = ['Oath of the Crown Paladin']
@@ -134,6 +143,7 @@ PAL13 = random.choice(Paladin_XGEa)
 HIS_Paladin = PAL00, PAL01, PAL03
 CUR_Paladin = PAL00, PAL02, PAL03
 
+#####RANGER#####
 Ranger_PHB = ['Beast Master Ranger', 'Hunter Ranger']
 Ranger_SCAG = ['Beast Master Ranger', 'Hunter Ranger']
 Ranger_TCEa = ['Beast Master Ranger', 'Hunter', 'Fey Wanderer Ranger', 'Swarm Keeper Ranger']
@@ -148,6 +158,7 @@ RAN12 = random.choice(Ranger_XGEa)
 HIS_Ranger = RAN00, RAN02
 CUR_Ranger = RAN00, RAN01, RAN02
 
+#####ROGUE#####
 Rogue_PHB = ['Arcane Trickster Rogue', 'Assassin Rogue', 'Thief Rogue']
 Rogue_SCAGa = ['Arcane Trickster Rogue', 'Assassin Rogue', 'Thief Rogue','Mastermind Rogue', 'Swashbuckler Rogue']
 Rogue_SCAGo = ['Mastermind Rogue', 'Swashbuckler Rogue']
@@ -165,6 +176,7 @@ ROG13 = random.choice(Rogue_XGEa)
 HIS_Rogue = ROG00, ROG01, ROG03
 CUR_Rogue = ROG00, ROG02, ROG03
 
+#####SORCERER#####
 Sorcerer_PHB = ['Draconic Bloodline Sorcerer', 'Wild Magic Sorcerer']
 Sorcerer_SCAGa = ['Draconic Bloodline Sorcerer', 'Wild Magic Sorcerer', 'Storm Sorcerer']
 Sorcerer_SCAGo = ['Storm Sorcerer']
@@ -182,6 +194,7 @@ SOR13 = random.choice(Sorcerer_XGEa)
 HIS_Sorcerer = SOR00, SOR01, SOR03
 CUR_Sorcerer = SOR00, SOR02, SOR03
 
+#####WARLOCK#####
 Warlock_PHB = ['The Archfey Warlock', 'The Fiend Warlock', 'The Great Old One Warlock']
 Warlock_SCAGa = ['The Archfey Warlock', 'The Fiend Warlock', 'The Great Old One Warlock', 'The Undying Warlock']
 Warlock_SCAGo = ['The Undying Warlock']
@@ -199,6 +212,7 @@ WAR13 = random.choice(Warlock_XGEa)
 HIS_Warlock = WAR00, WAR01, WAR03
 CUR_Warlock = WAR00, WAR02, WAR03
 
+#####WIZARD#####
 Wizard_PHB = ['School of Abjuration Wizard', 'School of Conjuration Wizard', 'School of Divination Wizard', 'School of Enchantment Wizard', 'School of Evocation Wizard', 'School of Illusion Wizard', 'School of Necromancy Wizard', 'School of Transmutation Wizard']
 Wizard_SCAGa = ['School of Abjuration Wizard', 'School of Conjuration Wizard', 'School of Divination Wizard', 'School of Enchantment Wizard', 'School of Evocation Wizard', 'School of Illusion Wizard', 'School of Necromancy Wizard', 'School of Transmutation Wizard']
 Wizard_SCAGo = ['Bladesinging Wizard']
@@ -224,7 +238,8 @@ HIS_EClass = BRB00, BRD00, CLE00, DRU00, FIG00, MON00, PAL00, RAN00, ROG00, SOR0
 
 CUR_AClass = Artificer, CUR_Barbarian, CUR_Bard, CUR_Cleric, CUR_Druid, CUR_Fighter, CUR_Monk, CUR_Paladin, CUR_Ranger, CUR_Rogue, CUR_Sorcerer, CUR_Warlock, CUR_Wizard
 
-val1 = random.choice(random.choices(HIS_ARace, weights=map(len, HIS_ARace))[0])
+val1A = random.choice(random.choices(HIS_ARace, weights=map(len, HIS_ARace))[0])
+val1B = random.choice(random.choices(CUS_Race, weights=map(len, CUS_Race))[0])
 
 val2A = random.choice(random.choice(HIS_AClass))
 val2B = random.choice(HIS_BClass)
@@ -234,29 +249,24 @@ val2E = random.choice(HIS_EClass)
 
 val3 = random.choice(random.choice(CUR_AClass))
 
-a = print('Race', val1)
-b = print('Historical Class:', val2A)
-c = print('Historical Class:', val2B)
-d = print('Historical Class:', val2D)
-e= print('Historical Class:', val2E)
-f = print('Seasonal Class:', val3)
-
 def Past():
-    print('Race:', val1)
-    if val1 in PHB:
-        print('Historical Class:', val2A)
+  msg = 'Your race is ' + val1A +'\n'
 
-    elif val1 in SCAG:
-        print('Historical Class:', val2B)
+  if val1A in PHB:
+    msg = msg + 'Your Historical Class is ' + val2A;
+  elif val1A in SCAG:
+    msg = msg + 'Your Historical Class is ' + val2B;
+  elif val1A in XGE:
+    msg = msg + 'Your Historical Class is ' + val2D;
+  else:
+    msg = msg + 'Your Historical Class is ' + val2E;
 
-    elif val1 in XGE:
-        print('Historical Class:', val2D)
-
-    elif val1 in EEPC or LR or MTF or VGM:
-        print('Historical Class:', val2E)
+  return msg;
 
 def Curr():
-    print('Seasonal Class:', val3)
+    msg1 = 'Your race is ' + val1B + '\n' + 'Your Seasonal Class is ' +val3
+
+    return msg1;
 
 @client.event
 async def on_ready():
@@ -270,9 +280,8 @@ async def quote(ctx):
 async def Old(ctx):
     await ctx.send(Past())
 
-
 @client.command()
 async def New(ctx):
     await ctx.send(Curr())
 
-client.run()
+client.run('ODA0MTI5OTEzNzc4ODY0MTYw.YBH2Vw.lRNYSJfI9f2_00dKGneavlf_AbY')
