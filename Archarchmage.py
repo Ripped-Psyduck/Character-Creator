@@ -238,35 +238,53 @@ HIS_EClass = BRB00, BRD00, CLE00, DRU00, FIG00, MON00, PAL00, RAN00, ROG00, SOR0
 
 CUR_AClass = Artificer, CUR_Barbarian, CUR_Bard, CUR_Cleric, CUR_Druid, CUR_Fighter, CUR_Monk, CUR_Paladin, CUR_Ranger, CUR_Rogue, CUR_Sorcerer, CUR_Warlock, CUR_Wizard
 
-val1A = random.choice(random.choices(HIS_ARace, weights=map(len, HIS_ARace))[0])
-val1B = random.choice(random.choices(CUS_Race, weights=map(len, CUS_Race))[0])
 
-val2A = random.choice(random.choice(HIS_AClass))
-val2B = random.choice(HIS_BClass)
-val2C = random.choice(HIS_CClass)
-val2D = random.choice(HIS_DClass)
-val2E = random.choice(HIS_EClass)
+def race_roller1A():
+    return random.choice(random.choices(HIS_ARace, weights=map(len, HIS_ARace))[0])
 
-val3 = random.choice(random.choice(CUR_AClass))
+def race_roller1B():
+    return random.choice(random.choices(CUS_Race, weights=map(len, CUS_Race))[0])
+
+def class_roller1A():
+    return random.choice(random.choice(HIS_AClass))
+
+def class_roller1B():
+    return random.choice(HIS_BClass)
+
+def class_roller1C():
+    return random.choice(HIS_CClass)
+
+def rclass_roller1D():
+    return random.choice(HIS_DClass)
+
+def class_roller1E():
+    return random.choice(HIS_EClass)
+
+def class_roller3():
+    return random.choice(random.choice(CUR_AClass))
+
+def race_rollerB():
+ return random.choice(random.choices(CUS_Race, weights=map(len, CUS_Race))[0])
+
 
 def Past():
-  msg = 'Your race is ' + val1A +'\n'
+  msg = 'Your race is ' + race_roller1A() +'\n'
 
   if val1A in PHB:
-    msg = msg + 'Your Historical Class is ' + val2A;
+    msg = msg + 'Your Historical Class is ' + class_roller1A();
   elif val1A in SCAG:
-    msg = msg + 'Your Historical Class is ' + val2B;
+    msg = msg + 'Your Historical Class is ' + class_roller1B();
   elif val1A in XGE:
-    msg = msg + 'Your Historical Class is ' + val2D;
+    msg = msg + 'Your Historical Class is ' + class_roller1D();
   else:
-    msg = msg + 'Your Historical Class is ' + val2E;
+    msg = msg + 'Your Historical Class is ' + class_roller1E();
 
   return msg;
 
 def Curr():
-    msg1 = 'Your race is ' + val1B + '\n' + 'Your Seasonal Class is ' +val3
+    msg1 = 'Your race is ' + race_roller1B() + '\n' + 'Your Seasonal Class is ' + class_roller3()
 
-    return msg1;
+    return msg1
 
 @client.event
 async def on_ready():
@@ -284,4 +302,5 @@ async def Old(ctx):
 async def New(ctx):
     await ctx.send(Curr())
 
-client.run('ODA0MTI5OTEzNzc4ODY0MTYw.YBH2Vw.lRNYSJfI9f2_00dKGneavlf_AbY')
+if __name__ == '__main__':
+    client.run(token)
