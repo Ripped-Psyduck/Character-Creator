@@ -1,6 +1,8 @@
 import discord
 import random
 
+import tome
+
 from discord.ext import commands
 
 from Secret import DISCORD_TOKEN
@@ -335,26 +337,43 @@ def race_rollerB():
     return random.choice(random.choice(CUS_Race))
 
 
+def roller(list):
+    """Returns a random choice from the given list.
+
+    Args:
+        list ([str]): A list of choices.
+
+    Returns:
+        str: A random choice from the given list.
+    """
+    return random.choice(list)
+
+
 def Past():
-    msg = 'Your race is ' + race_roller1A() + '\n'
+    # msg = 'Your race is ' + race_roller1A() + '\n'
+    #
+    # if val1A in PHB:
+    #     msg = msg + 'Your Historical Class is ' + class_roller1A()
+    # elif val1A in SCAG:
+    #     msg = msg + 'Your Historical Class is ' + class_roller1B()
+    # elif val1A in XGE:
+    #     msg = msg + 'Your Historical Class is ' + class_roller1D()
+    # elif val1A in EEPC or LR or MTF or VGM:
+    #     msg = msg + 'Your Historical Class is ' + class_roller1E()
 
-    if val1A in PHB:
-        msg = msg + 'Your Historical Class is ' + class_roller1A()
-    elif val1A in SCAG:
-        msg = msg + 'Your Historical Class is ' + class_roller1B()
-    elif val1A in XGE:
-        msg = msg + 'Your Historical Class is ' + class_roller1D()
-    elif val1A in EEPC or LR or MTF or VGM:
-        msg = msg + 'Your Historical Class is ' + class_roller1E()
+    msg = 'Your race is ' + roller(tome.HIS_RACE) + '\n' + \
+          'Your Historical Class is ' + roller(tome.HIS_CLASSES)
 
+    # print(ms6g)
     return msg
 
 
 def Curr():
-    msg1 = 'Your race is ' + race_roller1B() + '\n' + 'Your Seasonal Class is ' + \
-        class_roller3()
+    msg = 'Your race is ' + roller(tome.CUR_RACE) + '\n' + \
+          'Your Seasonal Class is ' + roller(tome.CUR_CLASSES)
 
-    return msg1
+    # print(msg)
+    return msg
 
 
 @client.event
