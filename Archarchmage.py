@@ -303,7 +303,7 @@ async def Old(ctx):
 async def New(ctx):
     await ctx.send(Curr())
 
-DISCORD_TOKEN = 'ODA0MTI5OTEzNzc4ODY0MTYw.YBH2Vw.lRNYSJfI9f2_00dKGneavlf_AbY'
+DISCORD_TOKEN = ''
 token = DISCORD_TOKEN
 
 if __name__ == '__main__':
