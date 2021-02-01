@@ -7,13 +7,13 @@ prefix = '~'
 client = commands.Bot(command_prefix = prefix, case_insensitive= True)
 
 ##RACES##
-EEPC = ['Genasi (Air)', 'Genasi (Earth)', 'Genasi (Fire)', 'Genasi (Water)']
-LR = ['Locathah']
-MTF = ['Dwarf (Duergar)', 'Elf (Eladrin)', 'Elf (Sea)', 'Elf (Shadar-kai)', 'Gith (Githyanki)', 'Gith (Githzerai)', 'Gnome (Deep)', 'Tiefling (Asmodeus)', 'Tiefling (Baalzebul)', 'Tiefling (Dispater)', 'Tiefling (Fierna)', 'Tiefling (Glasya)', 'Tiefling (Levistus)', 'Tiefling (Mammon)', 'Tiefling (Mephistopheles)', 'Tiefling (Zariel)']
-PHB = ['Dragonborn (Black)', 'Dragonborn (Blue)', 'Dragonborn (Brass)', 'Dragonborn (Copper)', 'Dragonborn (Gold)', 'Dragonborn (Green)', 'Dragonborn (Red)', 'Dragonborn (Silver)', 'Dragonborn (White)', 'Dwarf (Hill)', 'Dwarf (Mountain)', 'Elf (Drow)', 'Elf (High)', 'Elf (Wood)', 'Gnome (Forest)', 'Gnome (Rock)', 'Half-Elf', 'Half-Orc', 'Halfling (Lightfoot)', 'Halfling (Stout)', 'Human (Standard)', 'Human (Variant)', 'Tiefling']
-SCAG = ['Gnome (Deep/Svirfneblin)', 'Half-Elf (Aquatic Elf Descent)', 'Half-Elf (Drow Descent)', 'Half-Elf (Moon Elf or Sun Elf Descent)', 'Half-Elf (Wood Elf Descent)', 'Halfling (Ghostwise)', "Tiefling (Devil's Tongue)", 'Tiefling (Hellfire)', 'Tiefling (Infernal Legacy)']
-VGM = ['Aasimar (Fallen)', 'Aasimar (Protector)', 'Aasimar (Scourge)', 'Bugbear', 'Firbolg', 'Goblin', 'Goliath', 'Hobgoblin', 'Kenku', 'Kobold', 'Lizardfolk', 'Orc' , 'Tabaxi', 'Triton', 'Yuan-Ti Pureblood']
-XGE = ['Tortle']
+EEPC = ['Genasi (Air) (EEPC)', 'Genasi (Earth) (EEPC)', 'Genasi (Fire) (EEPC)', 'Genasi (Water) (EEPC)']
+LR = ['Locathah (LR)']
+MTF = ['Dwarf (Duergar) (MTF)', 'Elf (Eladrin) (MTF)', 'Elf (Sea) (MTF)', 'Elf (Shadar-kai) (MTF)', 'Gith (Githyanki) (MTF)', 'Gith (Githzerai) (MTF)', 'Gnome (Deep) (MTF)', 'Tiefling (Asmodeus) (MTF)', 'Tiefling (Baalzebul) (MTF)', 'Tiefling (Dispater) (MTF)', 'Tiefling (Fierna) (MTF)', 'Tiefling (Glasya) (MTF)', 'Tiefling (Levistus) (MTF)', 'Tiefling (Mammon) (MTF)', 'Tiefling (Mephistopheles) (MTF)', 'Tiefling (Zariel) (MTF)']
+PHB = ['Aasimar (Fallen) (VGM but is PHB for Historic)', 'Aasimar (Protector) (VGM but is PHB for Historic)', 'Aasimar (Scourge) (VGM but is PHB for Historic)', 'Dragonborn (Black)', 'Dragonborn (Blue)', 'Dragonborn (Brass)', 'Dragonborn (Copper)', 'Dragonborn (Gold)', 'Dragonborn (Green)', 'Dragonborn (Red)', 'Dragonborn (Silver)', 'Dragonborn (White)', 'Dwarf (Hill)', 'Dwarf (Mountain)', 'Elf (Drow)', 'Elf (High)', 'Elf (Wood)', 'Gnome (Forest)', 'Gnome (Rock)', 'Half-Elf', 'Half-Orc', 'Halfling (Lightfoot)', 'Halfling (Stout)', 'Human (Standard)', 'Human (Variant)', 'Tiefling']
+SCAG = ['Gnome (Deep/Svirfneblin) (SCAG)', 'Half-Elf (Aquatic Elf Descent) (SCAG)', 'Half-Elf (Drow Descent) (SCAG)', 'Half-Elf (Moon Elf or Sun Elf Descent) (SCAG)', 'Half-Elf (Wood Elf Descent) (SCAG)', 'Halfling (Ghostwise) (SCAG)', "Tiefling (Devil's Tongue) (SCAG)", 'Tiefling (Hellfire) (SCAG)', 'Tiefling (Infernal Legacy) (SCAG)']
+VGM = ['Bugbear (VGM)', 'Firbolg (VGM)', 'Goblin (VGM)', 'Goliath (VGM)', 'Hobgoblin (VGM)', 'Kenku (VGM)', 'Kobold (VGM)', 'Lizardfolk (VGM)', 'Orc (VGM)', 'Tabaxi (VGM)', 'Triton (VGM)', 'Yuan-Ti Pureblood (VGM)']
+XGE = ['Tortle (XGE)']
 SPC = ['Aasimar (Fallen)', 'Aasimar (Protector)', 'Aasimar (Scourge)', 'Dwarf (Duergar)', 'Elf (Eladrin)', 'Elf (Shadar-kai)', 'Firbolg', 'Gith (Githyanki)', 'Gith (Githzerai)', 'Gnome (Deep)', 'Goliath', 'Kenku', 'Kobold', 'Orc', 'Tabaxi', 'Tiefling (Asmodeus)', 'Tiefling (Baalzebul)', 'Tiefling (Dispater)', 'Tiefling (Fierna)', 'Tiefling (Glasya)', 'Tiefling (Levistus)', 'Tiefling (Mammon)', 'Tiefling (Mephistopheles)', 'Tiefling (Zariel)']
 
 HIS_ARace = [EEPC, LR, MTF, PHB, SCAG, VGM, XGE]
@@ -38,8 +38,8 @@ BRB02 = random.choice(Barbarian_TCEo)
 BRB12 = random.choice(Barbarian_TCEa)
 BRB03 = random.choice(Barbarian_XGEo)
 BRB13 = random.choice(Barbarian_XGEa)
-HIS_Barbarian = BRB00, BRB01, BRB03
-CUR_Barbarian = BRB00, BRB02, BRB03
+HIS_Barbarian = [BRB00, BRB01, BRB03]
+CUR_Barbarian = [BRB00, BRB02, BRB03]
 
 #####BARD#####
 Bard_PHB = ['College of Lore Bard', 'College of Valor Bard']
@@ -53,8 +53,8 @@ BRD01 = random.choice(Bard_TCEo)
 BRD11 = random.choice(Bard_TCEa)
 BRD02 = random.choice(Bard_XGEo)
 BRD12 = random.choice(Bard_XGEa)
-HIS_Bard = BRD00, BRD02
-CUR_Bard = BRD00, BRD01, BRD02
+HIS_Bard = [BRD00, BRD02]
+CUR_Bard = [BRD00, BRD01, BRD02]
 
 #####CLERIC#####
 Cleric_PHB = ['Knowledge Domain Cleric', 'Life Domain Cleric', 'Light Domain Cleric', 'Nature Domain Cleric', 'Tempest Domain Cleric', 'Trickery Domain Cleric', 'War Domain Cleric']
@@ -71,8 +71,8 @@ CLE02 = random.choice(Cleric_TCEo)
 CLE12 = random.choice(Cleric_TCEa)
 CLE03 = random.choice(Cleric_XGEo)
 CLE13 = random.choice(Cleric_XGEa)
-HIS_Cleric = CLE00, CLE01, CLE03
-CUR_Cleric = CLE00, CLE02, CLE03
+HIS_Cleric = [CLE00, CLE01, CLE03]
+CUR_Cleric = [CLE00, CLE02, CLE03]
 
 #####DRUID#####
 Druid_PHB = ['Circle of the Land Druid', 'Circle of the Moon Druid']
@@ -86,8 +86,8 @@ DRU01 = random.choice(Druid_TCEo)
 DRU11 = random.choice(Druid_TCEa)
 DRU02 = random.choice(Druid_XGEo)
 DRU12 = random.choice(Druid_XGEa)
-HIS_Druid = DRU00, DRU02
-CUR_Druid = DRU00, DRU01, DRU02
+HIS_Druid = [DRU00, DRU02]
+CUR_Druid = [DRU00, DRU01, DRU02]
 
 #####FIGHTER#####
 Fighter_PHB = ['Battle Master Fighter', 'Champion Fighter', 'Eldritch Knight Fighter']
@@ -104,8 +104,8 @@ FIG02 = random.choice(Fighter_TCEo)
 FIG12 = random.choice(Fighter_TCEa)
 FIG03 = random.choice(Fighter_XGEo)
 FIG13 = random.choice(Fighter_XGEa)
-HIS_Fighter = FIG00, FIG01, FIG03
-CUR_Fighter = FIG00, FIG02, FIG03
+HIS_Fighter = [FIG00, FIG01, FIG03]
+CUR_Fighter = [FIG00, FIG02, FIG03]
 
 #####MONK#####
 Monk_PHB = ['Way of the Four Elements Monk', 'Way of the pen Hand Monk', 'Way of Shadow Monk']
@@ -122,8 +122,8 @@ MON02 = random.choice(Monk_TCEo)
 MON12 = random.choice(Monk_TCEa)
 MON03 = random.choice(Monk_XGEo)
 MON13 = random.choice(Monk_XGEa)
-HIS_Monk = MON00, MON01, MON03
-CUR_Monk = MON00, MON02, MON03
+HIS_Monk = [MON00, MON01, MON03]
+CUR_Monk = [MON00, MON02, MON03]
 
 #####PALADIN#####
 Paladin_PHB = ['Oath of the Ancients Paladin', 'Oath of Devotion Paladin', 'Oath of Vengeance Paladin']
@@ -140,8 +140,8 @@ PAL02 = random.choice(Paladin_TCEo)
 PAL12 = random.choice(Paladin_TCEa)
 PAL03 = random.choice(Paladin_XGEo)
 PAL13 = random.choice(Paladin_XGEa)
-HIS_Paladin = PAL00, PAL01, PAL03
-CUR_Paladin = PAL00, PAL02, PAL03
+HIS_Paladin = [PAL00, PAL01, PAL03]
+CUR_Paladin = [PAL00, PAL02, PAL03]
 
 #####RANGER#####
 Ranger_PHB = ['Beast Master Ranger', 'Hunter Ranger']
@@ -155,8 +155,8 @@ RAN01 = random.choice(Ranger_TCEo)
 RAN11 = random.choice(Ranger_TCEa)
 RAN02 = random.choice(Ranger_XGEo)
 RAN12 = random.choice(Ranger_XGEa)
-HIS_Ranger = RAN00, RAN02
-CUR_Ranger = RAN00, RAN01, RAN02
+HIS_Ranger = [RAN00, RAN02]
+CUR_Ranger = [RAN00, RAN01, RAN02]
 
 #####ROGUE#####
 Rogue_PHB = ['Arcane Trickster Rogue', 'Assassin Rogue', 'Thief Rogue']
@@ -173,8 +173,8 @@ ROG02 = random.choice(Rogue_TCEo)
 ROG12 = random.choice(Rogue_TCEa)
 ROG03 = random.choice(Rogue_XGEo)
 ROG13 = random.choice(Rogue_XGEa)
-HIS_Rogue = ROG00, ROG01, ROG03
-CUR_Rogue = ROG00, ROG02, ROG03
+HIS_Rogue = [ROG00, ROG01, ROG03]
+CUR_Rogue = [ROG00, ROG02, ROG03]
 
 #####SORCERER#####
 Sorcerer_PHB = ['Draconic Bloodline Sorcerer', 'Wild Magic Sorcerer']
@@ -191,8 +191,8 @@ SOR02 = random.choice(Sorcerer_TCEo)
 SOR12 = random.choice(Sorcerer_TCEa)
 SOR03 = random.choice(Sorcerer_XGEo)
 SOR13 = random.choice(Sorcerer_XGEa)
-HIS_Sorcerer = SOR00, SOR01, SOR03
-CUR_Sorcerer = SOR00, SOR02, SOR03
+HIS_Sorcerer = [SOR00, SOR01, SOR03]
+CUR_Sorcerer = [SOR00, SOR02, SOR03]
 
 #####WARLOCK#####
 Warlock_PHB = ['The Archfey Warlock', 'The Fiend Warlock', 'The Great Old One Warlock']
@@ -209,8 +209,8 @@ WAR02 = random.choice(Warlock_TCEo)
 WAR12 = random.choice(Warlock_TCEa)
 WAR03 = random.choice(Warlock_XGEo)
 WAR13 = random.choice(Warlock_XGEa)
-HIS_Warlock = WAR00, WAR01, WAR03
-CUR_Warlock = WAR00, WAR02, WAR03
+HIS_Warlock = [WAR00, WAR01, WAR03]
+CUR_Warlock = [WAR00, WAR02, WAR03]
 
 #####WIZARD#####
 Wizard_PHB = ['School of Abjuration Wizard', 'School of Conjuration Wizard', 'School of Divination Wizard', 'School of Enchantment Wizard', 'School of Evocation Wizard', 'School of Illusion Wizard', 'School of Necromancy Wizard', 'School of Transmutation Wizard']
@@ -227,8 +227,8 @@ WIZ02 = random.choice(Wizard_TCEo)
 WIZ12 = random.choice(Wizard_TCEa)
 WIZ03 = random.choice(Wizard_XGEo)
 WIZ13 = random.choice(Wizard_XGEa)
-HIS_Wizard = WIZ00, WIZ01, WIZ03
-CUR_Wizard = WIZ00, WIZ02, WIZ03
+HIS_Wizard = [WIZ00, WIZ01, WIZ03]
+CUR_Wizard = [WIZ00, WIZ02, WIZ03]
 
 HIS_AClass = HIS_Barbarian, HIS_Bard, HIS_Cleric, HIS_Druid, HIS_Fighter,HIS_Monk, HIS_Paladin, HIS_Ranger, HIS_Rogue, HIS_Sorcerer, HIS_Warlock, HIS_Wizard
 HIS_BClass = BRB11, BRD00, CLE11, DRU00, FIG11, MON11, PAL11, RAN00, ROG11, SOR11, WAR11, WIZ11
@@ -238,15 +238,16 @@ HIS_EClass = BRB00, BRD00, CLE00, DRU00, FIG00, MON00, PAL00, RAN00, ROG00, SOR0
 
 CUR_AClass = Artificer, CUR_Barbarian, CUR_Bard, CUR_Cleric, CUR_Druid, CUR_Fighter, CUR_Monk, CUR_Paladin, CUR_Ranger, CUR_Rogue, CUR_Sorcerer, CUR_Warlock, CUR_Wizard
 
+val1A = random.choice(random.choices(HIS_ARace))
 
 def race_roller1A():
-    return random.choice(random.choices(HIS_ARace, weights=map(len, HIS_ARace))[0])
+    return random.choice(random.choice(HIS_ARace))
 
 def race_roller1B():
-    return random.choice(random.choices(CUS_Race, weights=map(len, CUS_Race))[0])
+    return random.choice(random.choices(CUS_Race))
 
 def class_roller1A():
-    return random.choice(random.choice(HIS_AClass))
+    return random.choice(HIS_AClass)
 
 def class_roller1B():
     return random.choice(HIS_BClass)
@@ -254,7 +255,7 @@ def class_roller1B():
 def class_roller1C():
     return random.choice(HIS_CClass)
 
-def rclass_roller1D():
+def class_roller1D():
     return random.choice(HIS_DClass)
 
 def class_roller1E():
@@ -264,7 +265,7 @@ def class_roller3():
     return random.choice(random.choice(CUR_AClass))
 
 def race_rollerB():
- return random.choice(random.choices(CUS_Race, weights=map(len, CUS_Race))[0])
+    return random.choice(random.choice(CUS_Race))
 
 
 def Past():
@@ -276,7 +277,7 @@ def Past():
     msg = msg + 'Your Historical Class is ' + class_roller1B();
   elif val1A in XGE:
     msg = msg + 'Your Historical Class is ' + class_roller1D();
-  else:
+  elif val1A in EEPC or LR or MTF or VGM:
     msg = msg + 'Your Historical Class is ' + class_roller1E();
 
   return msg;
@@ -284,7 +285,7 @@ def Past():
 def Curr():
     msg1 = 'Your race is ' + race_roller1B() + '\n' + 'Your Seasonal Class is ' + class_roller3()
 
-    return msg1
+    return msg1;
 
 @client.event
 async def on_ready():
@@ -301,6 +302,9 @@ async def Old(ctx):
 @client.command()
 async def New(ctx):
     await ctx.send(Curr())
+
+DISCORD_TOKEN = 'ODA0MTI5OTEzNzc4ODY0MTYw.YBH2Vw.lRNYSJfI9f2_00dKGneavlf_AbY'
+token = DISCORD_TOKEN
 
 if __name__ == '__main__':
     client.run(token)
